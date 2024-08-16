@@ -1,0 +1,80 @@
+/* PostCard.css */
+
+/* Post Card Container */
+.post-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.post-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #f0a500;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover .post-image {
+  transform: scale(1.1);
+}
+
+/* Heading Styling */
+.post-card h3 {
+  font-size: 1.8rem;
+  color: #ff5e5e; /* Bright red color for heading */
+  margin-bottom: 10px;
+}
+
+/* Like Button Styling */
+button {
+  background: #f76c6c;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #ff5e5e;
+  transform: scale(1.05);
+}
+
+/* Edit/Delete Button Styling */
+button {
+  background: #4caf50; /* Green color for edit/delete buttons */
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

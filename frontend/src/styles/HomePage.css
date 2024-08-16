@@ -1,0 +1,60 @@
+/* HomePage.css */
+body{
+  margin: 0;
+}
+/* Main container styling */
+.home-page {
+  background: linear-gradient(135deg, #fbc2eb, #a6c0fe); /* Vibrant gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* Content styling */
+.content {
+  background: rgba(255, 255, 255, 0.8); /* Light background with some transparency */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  animation: fadeIn 1s ease-out; /* Animation for content */
+}
+
+/* Heading styling */
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff5e5e; /* Bright color for the heading */
+}
+
+/* Loading and error messages */
+.loading, .error {
+  font-size: 1.5rem;
+  color: #ff5e5e; /* Bright red for errors */
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* No posts available message */
+.no-posts {
+  font-size: 1.5rem;
+  color: #f0a500; /* Bright yellow for 'No posts' */
+  text-align: center;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,96 @@
+/* Base styles for the Admin page */
+.admin-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .admin-container .header {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form title styles */
+  .admin-container .form-title {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Post card styles */
+  .admin-container .post-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .admin-container .post-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .admin-container .post-content {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .admin-container .post-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .admin-container .edit-button,
+  .admin-container .delete-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .admin-container .edit-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .admin-container .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .admin-container .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .admin-container .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* No posts message */
+  .admin-container .no-posts {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+  }
+  
+  /* Loading and error states */
+  .loading, .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff6f6f;
+  }
+  
